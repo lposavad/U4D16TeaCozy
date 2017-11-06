@@ -9,10 +9,10 @@ html {
 }
 /* Styles for the header */
 .header {
-  position: fixed;
   display: flex;
   height: 69px;
   width: 100%;
+  position: fixed;
   align-items: center;
   border-bottom: 1px solid seashell;
   background-color: black;
@@ -33,31 +33,43 @@ nav span {
 }
 /* Next: styles for the mission */
 .mission {
-  display: inline-block;
-  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
   width: 1200px;
   height: 700px;
+  margin: auto;
   justify-content: center;
+  align-items: center;
   border-color: white;
   background-image: url("../../resources/images/img-mission-background.jpg");
 }
 .statement {
-  display: block;
-  margin: auto;
   width: 100%;
   background-color: black;
+}
+.mission h2, h4 {
+  margin: 14px;
 }
 /* Styles for the featured items */
 .tealist {
   display: block;
-  width: 1000px;
   margin: auto;
   justify-content: center;
+  font-weight: bold;
 }
 .featured {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  width: 990px;
   justify-content: space-around;
+  margin: 0 auto 30px auto;
+}
+.featured2 {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 660px;
+  justify-content: space-around;
+  margin:  0 auto 30px auto;
 }
 .special {
   display: flex;
@@ -74,9 +86,9 @@ nav span {
   width: 1200px;
   height: 500px;
   margin: auto;
-  background-color: inherit;
+  background-color: grey;
   background-image: url("../../resources/images/img-locations-background.jpg");
-  flex-direction: row;
+  /*flex-direction: row;*/
   align-content: center;
 }
 .addressblock {
